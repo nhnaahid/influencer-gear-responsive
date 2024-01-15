@@ -1,0 +1,128 @@
+/* ---- Font import ----*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+/* ----- shared style ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary {
+    border: none;
+    border-radius: 41px;
+    background: #E02C6D;
+    color: #FFF;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 2%;
+    margin-top: 2%;
+}
+
+/* ----- Header style ----- */
+header {
+    width: 90%;
+    margin: 3% auto;
+}
+
+/* navigation bar style */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 1em;
+}
+nav h3 {
+    color: #3A3A3A;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+nav h3 span{
+    color: #E02C6D;
+}
+
+/* banner style */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+.banner-content{
+    width: 45%;
+}
+.banner-content h1{
+    color: #3A3A3A;
+    font-size: 3em;
+    font-weight: 700;
+}
+.banner-content p{
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.banner-image{
+    width: 30vmax;
+    background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 95%;
+}
+.banner-image img{
+    width: 100%;
+}
+/* sponsor style */
+.sponsor-container{
+    margin-top: 5%;
+}
+.sponsor{
+    width: 75%;
+    margin: 3% auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+header hr{
+    border-radius: 50%;
+    border-color:  rgba(247, 247, 248, 0.466);
+}
+
+/* Responsive Style-Media Query */
+@media screen and (max-width: 650px) {
+    body{
+        width: 100%;
+    }
+    nav, nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner-content h1{
+        font-size: 6vmin;
+    }
+    .banner-content p{
+        font-size: 3vmin;
+    }
+    
+}
